@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="container col-8 col-md-6">
-      <table class="table table-bordered text-center">
+    <div>
+      <table>
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">Role</th>
-            <th scope="col">Action</th>
+            <th>#</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Role</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody v-if="filterAdmins.length !== 0">
@@ -19,7 +19,7 @@
             <td>{{ admin.role }}</td>
             <td>
               <button @click="$emit('deletingAdmin', index)">
-                <i class="fa fa-trash text-danger"></i>
+                <i>Delete</i>
               </button>
             </td>
           </tr>
